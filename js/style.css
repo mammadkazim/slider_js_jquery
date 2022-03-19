@@ -20,8 +20,8 @@ img{
 .fa-solid{
     font-size: 30px;
 }
-div{
-    margin: 10px;
+.left-btn, .right-btn{
+    margin: 20px;
     transition: 0.5s ease;
 }
 .left-btn:active{
@@ -31,4 +31,27 @@ div{
 .right-btn:active{
     transform: scale(2);
     transform-origin: left;
+}
+#dots-container{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dots-container div{
+    width: 15px;
+    height: 15px;
+    margin: 7px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    transition: 0.3s ease;
+}
+#dots-container div:hover{
+    background-color: rgb(156, 147, 135);
+    cursor: pointer;
+}
+#dots-container .active{
+    background-color: black !important;
+    width: 19px;
+    height: 19px;
 }
